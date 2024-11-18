@@ -24,7 +24,8 @@ pt.use(StealthPlugin());
 const PASSWORD = "testtesttest1";
 
 const SLACK_APP_TOKEN =
-  process.env.SLACK_APP_TOKEN
+  process.env.SLACK_APP_TOKEN ||
+  "slack_token";
 const SLACK_CHANNEL_ID = "C0802U1NQKH";
 
 const web = new WebClient(SLACK_APP_TOKEN);
