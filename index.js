@@ -24,8 +24,7 @@ pt.use(StealthPlugin());
 const PASSWORD = "testtesttest1";
 
 const SLACK_APP_TOKEN =
-  process.env.SLACK_APP_TOKEN ||
-  "slack_token";
+  process.env.SLACK_APP_TOKEN;
 const SLACK_CHANNEL_ID = "C080HE4AKMH";
 
 const web = new WebClient(SLACK_APP_TOKEN);
@@ -47,7 +46,7 @@ async function sendSlackMessage(message) {
   }
 }
 
-// sendSlackMessage('Hello World');
+sendSlackMessage('Hello World');
 
 const nameArray = {
   Poland: [
@@ -153,7 +152,7 @@ function updateStatus(message) {
 const delay = (milliseconds) =>
   new Promise((resolve) => setTimeout(resolve, milliseconds));
 
-const cnd = "C07A8MD2X08";
+const cnd = "C080HE4AKMH";
 
 const signup = async (page, emailAddress) => {
   try {
