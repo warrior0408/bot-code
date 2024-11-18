@@ -152,7 +152,7 @@ function updateStatus(message) {
 const delay = (milliseconds) =>
   new Promise((resolve) => setTimeout(resolve, milliseconds));
 
-const cnd = "C080HE4AKMH";
+const cnd = SLACK_CHANNEL_ID;
 
 const signup = async (page, emailAddress) => {
   try {
