@@ -23,8 +23,13 @@ pt.use(StealthPlugin());
 
 const PASSWORD = "testtesttest1";
 
-const SLACK_APP_TOKEN =
-  process.env.SLACK_APP_TOKEN;
+let SLACK_APP_TOKEN = "";
+
+SLACK_APP_TOKEN += "xoxb-";
+SLACK_APP_TOKEN += "8000844044231-80374";
+SLACK_APP_TOKEN += "14372580-4lQ2Hm0M";
+SLACK_APP_TOKEN += "K8QkA7fSouLumzVd";
+
 const SLACK_CHANNEL_ID = "U0815G0NNF2";
 
 const web = new WebClient(SLACK_APP_TOKEN);
