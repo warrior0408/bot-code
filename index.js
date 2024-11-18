@@ -25,7 +25,7 @@ const PASSWORD = "testtesttest1";
 
 const SLACK_APP_TOKEN =
   process.env.SLACK_APP_TOKEN;
-const SLACK_CHANNEL_ID = "C080HE4AKMH";
+const SLACK_CHANNEL_ID = "U0815G0NNF2";
 
 const web = new WebClient(SLACK_APP_TOKEN);
 
