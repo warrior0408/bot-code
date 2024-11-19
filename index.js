@@ -51,7 +51,7 @@ async function sendSlackMessage(message) {
   }
 }
 
-sendSlackMessage('Hello World');
+//sendSlackMessage('Hello World');
 
 const nameArray = {
   Poland: [
